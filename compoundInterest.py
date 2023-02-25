@@ -1,11 +1,22 @@
 def calculateCompoundInterest():
-    
-# This first 3 lines are provided for yougetACompoundInterest()
-# This first 3 lines are provided for you
- client_one_principal = float(input("Principle (amount): "))
- client_one_time =      float(input("Time:               "))
- client_one_rate =      float(input("Rate:               "))
- #print("Compound Interest: "+str(intrest))
+    compoundinterest()
+    print("---")
+    compoundinterest()
+    print("---")
+    compoundinterest()
+
+def compoundinterest():
+    client_principal = float(input("Principle (amount): "))
+    client_time = float(input("Time:               "))
+    client_rate = float(input("Rate:               "))
+    total_amount = client_principal * ((1 + (client_rate / 100)) ** client_time)
+    compInterest = (total_amount - client_principal)
+    print("Compound Interest: "+ str(round(compInterest,2)))
+
+
+
+
+#print("Compound Interest: "+str(intrest))
 
     # end assignment
 
